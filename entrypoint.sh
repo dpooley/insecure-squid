@@ -12,8 +12,13 @@ create_cache_dir() {
   chown -R ${SQUID_USER}:${SQUID_USER} ${SQUID_CACHE_DIR}
 }
 
+change_acl() {
+  sed -i 's/http_access allow localhost/http_access allow all/g' /etc/squid/squid.conf
+}
+
 create_log_dir
 create_cache_dir
+change_acl
 
 # allow arguments to be passed to squid
 if [[ ${1:0:1} = '-' ]]; then
