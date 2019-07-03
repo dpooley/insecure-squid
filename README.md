@@ -1,6 +1,10 @@
-[![Circle CI](https://circleci.com/gh/sameersbn/docker-squid.svg?style=shield)](https://circleci.com/gh/sameersbn/docker-squid) [![Docker Repository on Quay.io](https://quay.io/repository/sameersbn/squid/status "Docker Repository on Quay.io")](https://quay.io/repository/sameersbn/squid)
 
-# sameersbn/squid:3.5.27-1
+
+# dpooley/insecure-squid:3.5.27-1
+
+## Allow from _any_ address by default  
+
+### forked from: sameersbn/docker-squid
 
 - [Introduction](#introduction)
   - [Contributing](#contributing)
